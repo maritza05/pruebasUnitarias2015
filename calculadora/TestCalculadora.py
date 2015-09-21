@@ -26,6 +26,12 @@ class TestCalculadora(unittest.TestCase):
         resultado = self.calc.resta(10,11)
         self.assertEqual(-1, resultado)
 
+    def test_resta_de_9_menos_11(self):
+        resultado = self.calc.resta(9,11)
+        self.assertEqual(-2, resultado)
+
+
+
 
 if __name__=="__main__":
     unittest.main()
